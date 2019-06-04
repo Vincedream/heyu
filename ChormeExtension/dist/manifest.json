@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "heyu",
+	"version": "1.0",
+	"description": "每一次的New Tab，都是一场最美好的相遇。",
+	"author": "vince",
+	"omnibox": { "keyword" : "heyu" },
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"browser_action": 
+	{
+		"default_icon": "icon.png"
+	},
+	"chrome_url_overrides":
+	{
+		"newtab": "index.html"
+	}
+}

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+}
+.app {
+    overflow: hidden;
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        img{
+            max-height: 420px;
+            height: 90%;
+            background: #fff;
+            padding: 30px;
+            border-style: solid;
+            border-width: 15px;
+            border-top-color: lighten(#000, 20%);
+            border-right-color: lighten(#000, 0%);
+            border-bottom-color: lighten(#000, 20%);
+            border-left-color: lighten(#000, 0%);
+            box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+        }
+        .tag {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+            color: #a2a2a2;
+        }
+        .slogan {
+            font-size: 20px;
+            margin-top: 40px;
+            text-align: center;
+            font-weight: 500;
+            color: #717171;
+        }
+    }
+}
