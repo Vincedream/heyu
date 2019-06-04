@@ -27,7 +27,3 @@ function getOneContent() {
         });
     })
 }
-
-getOneContent().then(res=>{
-    console.log(res)
-})
