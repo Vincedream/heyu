@@ -1,10 +1,10 @@
 ## 何遇
 
-「何遇」是我开发的一款Chorme扩展程序，其主要的功能是当你在 Chorme 浏览器中打开一个新的Tab页面时，空白页会展示出一些有趣的插图、句子、电影截图等，给苦涩的搬砖生活增添一丝乐趣，效果如下：
+「何遇」是我开发的一款Chrome扩展程序，其主要的功能是当你在 Chrome 浏览器中打开一个新的Tab页面时，空白页会展示出一些有趣的插图、句子、电影截图等，给苦涩的搬砖生活增添一丝乐趣，效果如下：
 
 ![image](http://static4.vince.xin/C83A480A-5A9B-433A-9AD0-D2DCA9750491.png)
 
-实现方案很简单，页面就是一个普通的前端页面，配置少许的 `manifest.json` 便可以直接转换为 Chorme 扩展程序，而后端服务是一个 HTTP 接口，返回页面展示的内容，该接口使用了阿里云的 Faas 服务，是一种 Serverless 概念的实现方式，总之该接口无须部署在自己的服务器上，而是直接放在阿里云平台上，具体见下文。
+实现方案很简单，页面就是一个普通的前端页面，配置少许的 `manifest.json` 便可以直接转换为 Chrome 扩展程序，而后端服务是一个 HTTP 接口，返回页面展示的内容，该接口使用了阿里云的 Faas 服务，是一种 Serverless 概念的实现方式，总之该接口无须部署在自己的服务器上，而是直接放在阿里云平台上，具体见下文。
 
 假如你科学上网，便可以访问该 [链接](https://chrome.google.com/webstore/detail/%E4%BD%95%E9%81%87/bliibihaohjjohhclajiakpmomocnael) 下载体验，或者在 [应用市场](https://chrome.google.com/webstore/category/extensions?h1=zh) 搜索“何遇”下载。
 
@@ -210,9 +210,9 @@ upf hello -d /Users/vince/Desktop/FaasTes
 
 5. 测试接口，使用 postman 测试接口，简单的后端服务即完成。
 
-## 开发一个简单的 Chorme 扩展程序
+## 开发一个简单的 Chrome 扩展程序
 
-Chorme 扩展程序并不是什么新奇的技术，简单来说就是一个 web 应用，根据 Chorme 扩展程序的规范，按照给出的接口定制开发部分代码，更改一些配置，这里有一篇很好的指南推荐给大家[《Chrome插件开发全攻略》](https://github.com/sxei/chrome-plugin-demo)。
+Chrome 扩展程序并不是什么新奇的技术，简单来说就是一个 web 应用，根据 Chrome 扩展程序的规范，按照给出的接口定制开发部分代码，更改一些配置，这里有一篇很好的指南推荐给大家[《Chrome插件开发全攻略》](https://github.com/sxei/chrome-plugin-demo)。
 
 ### 需求描述
 
@@ -287,11 +287,11 @@ export default App
 
 ```
 
-这里只是一个简单的 web 应用，那么如何将其转换为 Chorme 拓展程序呢？
+这里只是一个简单的 web 应用，那么如何将其转换为 Chrome 拓展程序呢？
 
-#### 转换为 Chorme 拓展程序
+#### 转换为 Chrome 拓展程序
 
-首先，我们将该 React 项目 build 后，在 dist 文件下添加一系列文件，这里有个关键的文件 `manifest.json`，这里描述的是Chorme 拓展程序的信息：
+首先，我们将该 React 项目 build 后，在 dist 文件下添加一系列文件，这里有个关键的文件 `manifest.json`，这里描述的是Chrome 拓展程序的信息：
 
 
 ```
@@ -353,7 +353,7 @@ chrome.browserAction.onClicked.addListener(() => {
 └── manifest.json
 ```
 
-以上源码已经上传到 Github ，传送门： [ChormeExtension](https://github.com/Vincedream/heyu/tree/master/ChormeExtension)
+以上源码已经上传到 Github ，传送门： [ChromeExtension](https://github.com/Vincedream/heyu/tree/master/ChormeExtension)
 
 
 #### 测试拓展程序
