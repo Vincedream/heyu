@@ -1,6 +1,6 @@
 ## 何遇
 
-「何遇」是我开发的一款Chrome扩展程序，其主要的功能是当你在 Chrome 浏览器中打开一个新的Tab页面时，空白页会展示出一些有趣的插图、句子、电影截图等，给苦涩的搬砖生活增添一丝乐趣，效果如下：
+[「何遇」](https://chrome.google.com/webstore/detail/%E4%BD%95%E9%81%87/bliibihaohjjohhclajiakpmomocnael?hl=zh-CN)是我开发的一款Chrome扩展程序，其主要的功能是当你在 Chrome 浏览器中打开一个新的Tab页面时，空白页会展示出一些有趣的插图、句子、电影截图等，给苦涩的搬砖生活增添一丝乐趣，效果如下：
 
 ![image](http://static4.vince.xin/C83A480A-5A9B-433A-9AD0-D2DCA9750491.png)
 
